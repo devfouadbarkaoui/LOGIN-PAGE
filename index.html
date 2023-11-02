@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>LogIn User Interface</title>
+</head>
+<body>
+    <div class="container">
+        <div class="right-side">
+            <img src="./log.png" alt="" srcset="">
+            <h4>Your <span style="color:white; background-color: #a8c0d3; padding: 4px;">Health</span> <br>
+            Is Our <span style="color:white; background-color: #bc8e92; padding: 4px;">Responsibility</span> </h4>
+        </div>
+        <div class="left-side">
+            <H2>Create an account</H2>
+            <p>Sign up now and unlock exclusive access!</p>
+            <form action="#">
+                <label for="name">Your Name</label><br>
+                <input type="text" id="name" placeholder="First & Last"><br>
+                <label for="mail">Email</label><br>
+                <input type="email" id="mail" placeholder="you@email.com"><br>
+                <label for="psw">Password</label><br>
+                <input type="password" id="psw" placeholder="at least 8 characters" name="password"><br>
+                <label for="cfpsw">Confirm Password</label><br>
+                <input type="password" id="cfpsw" placeholder="Password Confirmation "><br>
+                <button id="sub" type="submit">Create account</button><br>
+                <button id="signin">Sign in </button>
+                <div id="msg"></div>
+            </form>
+            <div class="help">
+                <!-- icon -->
+                <p>
+                <i class="fa-regular fa-envelope-open fa-sm"></i>
+                Help@Health.com</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const message = document.getElementById('msg').value;
+        document.getElementById('sub').
+        onclick = (clicked) => {
+            console.log("clicked")
+        };
+    </script>
+</body>
+</html>
